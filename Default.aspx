@@ -1,25 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
-    <script type="text/javascript" src="js/camera.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/superfish.js"></script>
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-    <script type="text/javascript" src="js/jquery.tweet.js"></script>
-    <script type="text/javascript" src="js/myscript.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function(){	
-			//Slider
-			$('#camera_wrap_1').camera();
-			
-			//Featured works & latest posts
-			$('#mycarousel, #mycarousel2, #newscarousel').jcarousel();													
-		});		
-	</script>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <!--page_container-->

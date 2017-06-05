@@ -19,55 +19,57 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <!--header-->
+    <!--header-->    
     <div class="header">
     	<div class="wrap">
         	<div class="navbar navbar_ clearfix">
-            	<div class="container">
+                <div id="login">
+        <ul class="nav sf-menu">
+               <li><a href="Register.aspx">免費註冊</a></li>
+               <li><a href="Login.aspx">登入</a></li>                                    
+        </ul>
+                </div>
+                <div class="container">                                       
                     <div class="row">
-                        <div class="span4">
-                        	<div class="logo"><a href="index.html"><img src="img/logo.png" alt="" /></a></div>                        
-                        </div>
-                        <div class="span8">
-                        	<div class="follow_us">
-                                <ul>
-                                    <li><a href="#" class="facebook">Facebook</a></li>
-                                    <li><a href="#" class="vimeo">Vimeo</a></li>
-                                    <li><a href="#" class="tumbrl">Tumbrl</a></li>
-                                    <li><a href="#" class="twitter">Twitter</a></li>
-                                    <li><a href="#" class="delicious">Delicious</a></li>
-                                </ul>
-                            </div>
+                        <div class="span3">
+                        	<div class="logo"><a href="Default.aspx"><img src="img/logo.png" alt="" /></a></div>                        
+                        </div>                        
+                        <div class="span8">                        	
                             <div class="clear"></div>
                             <nav id="main_menu">
                                 <div class="menu_wrap">
-                                    <ul class="nav sf-menu">
-                                      <li class="current"><a href="index.html">Home</a></li>
-                                      <li><a href="about.html">About</a></li>
-                                      <li class="sub-menu"><a href="javascript:{}">Features</a>
+                                    <ul class="nav sf-menu" id="navigator">
+                                      <li class="sub-menu"><a class="big" href="TakeWeddingPicture.aspx">拍婚紗</a>
                                           <ul>
-                                              <li><a href="scaffolding.html"><span>-</span>Scaffolding</a></li>
-                                              <li><a href="typography.html"><span>-</span>Typography</a></li>
-                                              <li><a href="shortcodes.html"><span>-</span>Shortcodes</a></li>
-                                              <li><a href="tables.html"><span>-</span>Tables</a></li>                                          
+                                              <li><a href="TakeWeddingPicture.aspx"><span>-</span>全部拍婚紗方案</a></li>
+                                              <li><a href="TakeWeddingPicture.aspx"><span>-</span>自助婚紗</a></li>
+                                              <li><a href="TakeWeddingPicture.aspx"><span>-</span>婚紗包套</a></li>
+                                              <li><a href="TakeWeddingPicture.aspx"><span>-</span>海外婚紗</a></li>
+                                              <li><a href="TakeWeddingPicture.aspx"><span>-</span>特色婚紗</a></li>                                          
                                           </ul>                                          
                                       </li>
-                                      <li class="sub-menu"><a href="javascript:{}">Portfolio</a>
-                                           <ul>
-                                              <li><a href="portfolio_2columns.html"><span>-</span>2 Columns</a></li>
-                                              <li><a href="portfolio_3columns.html"><span>-</span>3 Columns</a></li>
-                                              <li><a href="portfolio_4columns.html"><span>-</span>4 Columns</a></li>                                      
-                                          </ul>
-                                      </li>                                  
-                                      <li class="sub-menu"><a href="javascript:{}">Blog</a>
-                                           <ul>
-                                              <li><a href="blog.html"><span>-</span>Blog with right sidebar</a></li>
-                                              <li><a href="blog_post.html"><span>-</span>Blog post</a></li>                                      
-                                          </ul>
+                                        <li class="sub-menu"><a class="big" href="WeddingREC.aspx">婚禮攝影</a>
+                                          <ul>
+                                              <li><a href="WeddingREC.aspx"><span>-</span>全部婚禮攝影方案</a></li>
+                                              <li><a href="WeddingREC.aspx"><span>-</span>婚禮攝影</a></li>
+                                              <li><a href="WeddingREC.aspx"><span>-</span>婚禮錄影</a></li>
+                                              <li><a href="WeddingREC.aspx"><span>-</span>婚禮MV</a></li>                                          
+                                          </ul>                                          
                                       </li>
-                                      <li><a href="contacts.html">Contacts</a></li>
+                                        <li class="sub-menu"><a class="big" href="MakeUpSecretary.aspx">新娘秘書</a>
+                                          <ul>
+                                              <li><a href="MakeUpSecretary.aspx"><span>-</span>全部新娘祕書方案</a></li>
+                                              <li><a href="MakeUpSecretary.aspx"><span>-</span>整體造型</a></li>
+                                              <li><a href="MakeUpSecretary.aspx"><span>-</span>新娘美甲美睫</a></li>                                       
+                                          </ul>                                          
+                                      </li>
+                                        <li><a href="WeddingSite.aspx" class="big">婚宴場地</a></li>
+                                        <li><a href="AskPrice.aspx" class="big">新人問報價</a></li>
+                                        <li><a href="WeddingOneDragon.aspx" class="big">婚禮一條龍</a></li>
+                                        <li><a href="StoreEvaluation.aspx" class="big">店家評價</a></li>                                
                                     </ul>
                                 </div>
+
                              </nav>                            
                         </div>
                     </div>                
@@ -76,7 +78,7 @@
         </div>    
     </div>
     <!--//header-->
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" style="background-color:white">
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
@@ -137,8 +139,8 @@
             	<div class="container">
                 	<div class="row">
                 		<div class="span5">
-                        	<div class="foot_logo"><a href="index.html"><img src="img/foot_logo.png" alt="" /></a></div>    
-                        	<div class="copyright">&copy; 2020 Jessica White. Professional Fashion Photography. All Rights Reserved.</div>                        
+                        	<div class="foot_logo"><a href="Default.aspx"><img src="img/logo.png" alt="" /></a></div>    
+                        	<div class="copyright">&copy; 2020 iiiSouth. Professional Fashion Photography. All Rights Reserved.</div>                        
                         </div>
                         <div class="span7">
                         	<div class="foot_right_block">
@@ -161,12 +163,10 @@
                             	<div class="clear"></div>
                             	<div class="foot_menu">
                             		<ul>
-                                        <li><a href="index.html" class="current">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="scaffolding.html">features</a></li>
-                                        <li><a href="portfolio_2columns.html">Portfolio</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contacts.html">Contacts</a></li>
+                                        <li><a href="Default.aspx" class="current">首頁</a></li>
+                                        <li><a href="About.aspx">關於我們</a></li>
+                                        <li><a href="Register.aspx">免費註冊</a></li>
+                                        <li><a href="Login.aspx">登入</a></li>
                                     </ul>
                             	</div>
                             </div>                            
@@ -178,5 +178,25 @@
     </div>
     <!--//footer-->
     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {           
+			//Slider
+			$('#camera_wrap_1').camera();
+			
+			//Featured works & latest posts
+			$('#mycarousel, #mycarousel2, #newscarousel').jcarousel();													
+		});		
+	</script>
+
 </body>
 </html>

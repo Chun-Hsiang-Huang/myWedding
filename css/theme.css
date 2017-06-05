@@ -103,11 +103,12 @@ img {
   color: #313131;
   font-family: 'Open Sans', sans-serif;
   font-weight:800;
-  font-size:14px;
+  font-size:18px;
   text-transform: uppercase;
   text-shadow: none;
   text-decoration: none;
-  padding:0; 
+  padding:0;
+  padding-top:15px; 
   text-align:left;
 }
 .menu_wrap .nav > li.sfHover > a,
@@ -143,7 +144,7 @@ img {
 .menu_wrap .nav ul {
   position: absolute;
   display: none;
-  width: 133px;
+  width: 150px;
   left: 0;
   top: 55px;
   list-style: none;
@@ -167,7 +168,7 @@ img {
 .menu_wrap .nav ul li a {
   display: block;
   text-transform: none;
-  font-size: 12px;
+  font-size: 15px;
   font-weight:400;
   color:#313131;
   line-height: 18px;
@@ -1012,6 +1013,22 @@ ul.recent_post div a:hover {color:#d00b01;
     margin: 0 0 9px 0;
     padding: 10px;
     text-align: center;
+}
+#login {
+    float:right;
+    margin-top:15px;
+    margin-right:60px;
+}
+#login li a {
+    color:red;
+    font-size:18px;
+    font-family:'微軟正黑體';
+}
+#login li a:hover {
+    font-weight:bold;
+    color:gray;
+    font-size:18px;
+    font-family:'微軟正黑體';
 }
 
 
